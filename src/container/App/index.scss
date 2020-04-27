@@ -1,0 +1,59 @@
+@import "../../asset/style/variables.scss";
+
+.App {
+  display: flex;
+  flex: 1;
+  .container {
+    background-color: $backColor;
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    padding: 16px;
+    &_navbar {
+      height: 60px;
+      line-height: 60px;
+      background: $themeColor;
+      color: $primaryColor;
+      border-radius: 10px;
+      padding: 0 20px;
+    }
+    &_content {
+      display: flex;
+      flex-direction: row;
+      flex: 1;
+      margin-top: 10px;
+      &_main {
+        display: flex;
+        flex-direction: column;
+        flex: 7;
+        &_contextBar {
+          height: 60px;
+          line-height: 60px;
+          background: $themeColor;
+          color: $primaryColor;
+          border-radius: 10px;
+          padding: 0 20px;
+        }
+        &_mainPanel {
+          flex: 1;
+          line-height: 60px;
+          background: $themeColor;
+          color: $primaryColor;
+          font-size: 24px;
+          border-radius: 10px;
+          padding: 0 20px;
+          margin-top: 10px;
+        }
+      }
+      &_inspector {
+        flex: 3;
+        line-height: 40px;
+        background: $themeColor;
+        color: $primaryColor;
+        border-radius: 10px;
+        padding: 0 20px;
+        margin-left: 10px;
+      }
+    }
+  }
+}
